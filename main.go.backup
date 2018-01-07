@@ -1,0 +1,26 @@
+package main
+
+import (
+	"io"
+	"net/http"
+	"math"
+)
+
+func hello(w http.ResponseWriter, r *http.Request) {
+	IsPrime(49979687) // just to create some cpu usage for testing autoscaling...
+	io.WriteString(w, "Hello World from Spinnaker!")
+}
+
+func main() {
+	http.HandleFunc("/", hello)
+	http.ListenAndServe(":80", nil)
+}
+
+func IsPrime(value int) bool {
+    for i := 2; i <= int(math.Floor(float64(value) / 2)); i++ {
+        if value%i == 0 {
+            return false
+        }
+    }
+    return value > 1
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<!-- Template from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_black&stacked=h -->
+<title>Fake Online Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./stylesheets/w3.css">
+<link rel="stylesheet" href="./stylesheets/w3-theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding isp-header" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme" style="visibility: hidden;"></i>
+  <div class="w3-center">
+    <h4 class="font-shadow">ICS Kickoff 2018</h4>
+    <h1 class="w3-xxxlarge w3-animate-bottom font-shadow">Demo Online Shop</h1>
+    <div class="w3-padding-32">
+    </div>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
+  <div class="w3-third">
+    <div class="w3-card w3-container my-card">
+      <h3>Food</h3><br>
+      <i class="fa fa-cutlery w3-margin-bottom w3-text-theme" style="font-size:120px;"></i>
+      <div class="w3-center">
+        <a class="w3-button w3-theme">Go to Onlineshop</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-container my-card">
+      <h3>Household</h3><br>
+      <i class="fa fa-home w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <div class="w3-center">
+        <a class="w3-button w3-theme">Go to Onlineshop</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card w3-container my-card">
+      <h3>Wineworld</h3><br>
+      <i class="fa fa-glass w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <div class="w3-center">
+        <a class="w3-button w3-theme">Go to Onlineshop</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dummy Text -->
+<hr>
+<div class="w3-center w3-margin-left w3-margin-right">
+  <h2>Curabitur felis magna</h2>
+  <p class="w3-medium w3-left-align">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis magna, tincidunt in enim eu, semper bibendum diam. Suspendisse sed dictum justo. Nulla quis molestie enim, ut congue urna. Suspendisse potenti. Cras vulputate nisi tortor, placerat vulputate diam molestie et. Pellentesque pharetra volutpat eros ut vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam molestie orci ipsum, sit amet suscipit tortor feugiat non. Proin dolor enim, interdum et magna ut, posuere tincidunt urna.
+  </p>
+  <p class="w3-medium w3-left-align">
+    Aenean consectetur pharetra nunc nec vulputate. Sed a mauris eget sapien bibendum posuere. Duis sed turpis non felis elementum tincidunt et at mauris. Quisque imperdiet pretium vehicula. Nullam blandit, mi in ornare euismod, odio urna egestas risus, in convallis ipsum tortor et sapien. Integer consequat scelerisque nisi, eu pharetra dolor vulputate vel. Etiam blandit ut augue sit amet placerat. Fusce lacus purus, vehicula eget iaculis ut, rutrum nec tellus.
+  </p>
+  <p class="w3-medium w3-left-align">
+    Curabitur nec arcu ac justo ullamcorper ornare vitae ac mauris. Aliquam erat volutpat. Proin dapibus commodo ligula, ac tempor lacus imperdiet nec. Vivamus et justo vehicula, fermentum ante at, venenatis enim. In vestibulum odio nec ex ullamcorper convallis. Cras laoreet fringilla vulputate. Morbi cursus elit at velit tempor ornare. Curabitur congue ligula a sapien volutpat faucibus. In dapibus risus lectus, placerat sodales tellus imperdiet vitae. Fusce odio enim, suscipit non sollicitudin id, iaculis ac nulla. Nullam fringilla lacus vel lectus vehicula consectetur. Ut commodo nunc nisi, ac lacinia arcu cursus vitae. Ut id tempor eros.
+  </p>
+  <p class="w3-medium w3-left-align">
+    Pellentesque maximus, purus vel congue mollis, elit massa rutrum neque, vel scelerisque metus libero vel magna. Integer mauris erat, consectetur in sapien et, euismod condimentum magna. Curabitur luctus sed quam sed rhoncus. Sed nec luctus velit, hendrerit malesuada tellus. Vestibulum dictum enim sed lectus posuere sollicitudin. Nulla fermentum turpis eu tempus placerat. Nulla in justo eu lorem aliquam porttitor. In iaculis, diam eu dapibus molestie, nulla nisl porttitor nisl, ut vehicula urna lorem sit amet risus. Aliquam ac urna vitae massa feugiat tincidunt vitae eget tortor. Aenean risus mi, mattis vulputate tempus et, molestie ac nunc. Sed facilisis condimentum nulla in elementum.
+  </p>
+  <p class="w3-medium w3-left-align">
+    Sed in libero rutrum, varius leo in, pellentesque ligula. Duis semper dignissim varius. Vivamus leo orci, suscipit vitae risus ut, volutpat tempor neque. Sed magna metus, pellentesque vel aliquam quis, volutpat ac arcu. Maecenas laoreet fermentum sapien, sit amet mattis felis vestibulum in. Quisque scelerisque semper orci et malesuada. Mauris dui nibh, ultrices et auctor sed, volutpat ut nunc. Donec et maximus dui, sit amet porttitor nunc. Integer at pellentesque mauris. Sed non gravida tortor. Donec ut dui dictum, placerat metus eu, porta nisi. Etiam at risus nisi. Nam vulputate dignissim neque, malesuada porttitor diam finibus eu. Aenean id magna purus. Vivamus eget sodales risus, ac fringilla magna. Aenean in dictum erat.
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <p>ICS Kickoff 2018: Spinnaker & Kubernetes Demo</p>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+    // Side navigation
+    function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "100%";
+        x.style.fontSize = "40px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
