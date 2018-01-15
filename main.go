@@ -15,7 +15,7 @@ func main() {
 func MyPrimeHandler(h http.Handler) http.Handler {
   return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     // Create some CPU usage
-    var n = 2300
+    var n = 1000
     var prime = nthPrime(n)
     log.Printf("%v is the %vth prime number\n", prime, n)
     
